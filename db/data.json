@@ -1,0 +1,76 @@
+[
+  {
+    "name": "group1",
+    "questions": [
+      {
+        "question": "Who let the dogs out?",
+        "correct_answer": "nobody",
+        "incorrect_answers": [
+          "ough",
+          "ough1",
+          "ough2"
+        ]
+      },
+      {
+        "question": "Who you are?",
+        "correct_answer": "Batman",
+        "incorrect_answers": [
+          "Robin",
+          "Hulk",
+          "Samuel L. Jackson"
+        ]
+      }
+    ],
+    "coordinates": "",
+    "status": "not found"
+  },
+  {
+    "name": "group2",
+    "questions": [
+      {
+        "question": "Как пройти в библиотеку?",
+        "correct_answer": "прямо",
+        "incorrect_answers": [
+          "налево",
+          "направо",
+          "назад"
+        ]
+      },
+      {
+        "question": "Ты как?",
+        "correct_answer": "Нормалды",
+        "incorrect_answers": [
+          "Все хуево, все пиздато",
+          "Так себе",
+          "Cool"
+        ]
+      }
+    ],
+    "coordinates": "",
+    "status": "not found"
+  },
+  {
+    "name": "group3",
+    "questions": [
+      {
+        "question": "Ну че еще?",
+        "correct_answer": "Ниче",
+        "incorrect_answers": [
+          "ЧЕ",
+          "КАВО",
+          "КАК"
+        ]
+      },
+      {
+        "question": "Мммм?",
+        "correct_answer": "ага",
+        "incorrect_answers": [
+          "ууу",
+          "бля"
+        ]
+      }
+    ],
+    "coordinates": "",
+    "status": "not found"
+  }
+]

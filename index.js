@@ -4,7 +4,7 @@ require('dotenv').config()
 
 const usersRouter = require('./routes/users')
 
-const db = require('./db')
+const dbConfig = require('./db/config')
 
 const app = express()
 const port = process.env.PORT || 8080
@@ -18,7 +18,7 @@ app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`)
 })
 
-db
+dbConfig
     .on('error', (err) => {
         console.error(err)
     })
