@@ -12,8 +12,10 @@ router
 
     .get('/user', userController.user)
 
-    .put('/set-coordinates/:username', userController.set_coordinates)
+    .put('/set-data/:username', userController.set_data)
 
     .put('/set-status/:username', userController.set_status)
+
+    .put('/set-photo/:username', userController.set_photo)
 
 module.exports = router

@@ -6,6 +6,12 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
+    message: {
+        type: String
+    },
+    photo: {
+        type: String
+    },
     questions: {
         type: Array,
         of: new Schema({

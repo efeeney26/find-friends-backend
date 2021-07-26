@@ -44,10 +44,16 @@ exports.user = (req, res) => {
     })
 }
 
-exports.set_coordinates = (req, res) => {
+exports.set_data = (req, res) => {
     User.findOneAndUpdate(
         { name: req?.params?.username },
-        { $set: { coordinates: req?.body?.coordinates || '' } },
+        {
+            $set: {
+                coordinates: req?.body?.coordinates || '',
+                message: req?.body?.message || '',
+                photo: req?.body?.photo || ''
+            },
+        },
         {
             useFindAndModify: false
         },
@@ -75,6 +81,24 @@ exports.set_status = (req, res) => {
                 res.status(500).send({ error: err })
             } else {
                 res.send('Status changed successfully')
+            }
+        }
+    )
+}
+
+exports.set_photo = (req, res) => {
+    User.findOneAndUpdate(
+        { name: req?.params?.username },
+        { $set: { photo: req?.body?.photo || '' } },
+        {
+            useFindAndModify: false
+        },
+        (err) => {
+            if (err) {
+                console.error(err)
+                res.status(500).send({ error: err })
+            } else {
+                res.send('Photo changed successfully')
             }
         }
     )
