@@ -85,21 +85,3 @@ exports.set_status = (req, res) => {
         }
     )
 }
-
-exports.set_photo = (req, res) => {
-    User.findOneAndUpdate(
-        { name: req?.params?.username },
-        { $set: { photo: req?.body?.photo || '' } },
-        {
-            useFindAndModify: false
-        },
-        (err) => {
-            if (err) {
-                console.error(err)
-                res.status(500).send({ error: err })
-            } else {
-                res.send('Photo changed successfully')
-            }
-        }
-    )
-}

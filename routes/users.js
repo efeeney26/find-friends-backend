@@ -16,6 +16,4 @@ router
 
     .put('/set-status/:username', userController.set_status)
 
-    .put('/set-photo/:username', userController.set_photo)
-
 module.exports = router
