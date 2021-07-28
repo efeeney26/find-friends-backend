@@ -62,7 +62,7 @@ exports.set_data = (req, res) => {
                 console.error(err)
                 res.status(500).send({ error: err })
             } else {
-                res.send('Coordinates added successfully')
+                res.send('Данные успешно добавлены! Ты молодец!')
             }
         }
     )
