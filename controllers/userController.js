@@ -1,7 +1,7 @@
 const User = require('../models/user')
 
 exports.user_list = (req, res) => {
-    User.find( (err, bookList) => {
+    User.find( {}).sort('name').exec((err, bookList) => {
         if (err) {
             console.error(err)
             res.status(500).send({ error: err })
