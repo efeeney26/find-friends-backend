@@ -71,7 +71,7 @@ exports.set_data = (req, res) => {
 exports.set_status = (req, res) => {
     User.findOneAndUpdate(
         { name: req?.params?.username },
-        { $set: { status: req?.body?.status || '' } },
+        { $set: { status: req?.body?.status || 'found' } },
         {
             useFindAndModify: false
         },
